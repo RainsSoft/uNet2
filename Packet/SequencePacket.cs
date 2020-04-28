@@ -10,6 +10,7 @@ namespace uNet2.Packet
 {
     internal class SequencePacket : ISequencePacket
     {
+        //一个大包拆分成N个顺序包
         public int PacketId { get { return -10001; } }
         public int SeqIdx { get; set; }
         public bool IsLast { get; set; }
